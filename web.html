@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Welcome to Volkswagen India </title>
+    <link rel="stylesheet" href="MDB/css/bootstrap.css">
+    <link rel="stylesheet" href="MDB/css/mdb.css">
+    <style>
+        body{
+            background: black url(carss.webp) no-repeat 0px 0px scroll;
+            background-size: cover;
+            /* height: inherit; */
+            /* background-position: center; */
+            background-image: cross-fade(5px)
+            ;
+
+        }
+        *
+        {
+            margin: 2px;
+        }
+        span
+        {
+            color: crimson;
+            font-family: cursive;
+            font-size: 50px;
+        }
+        a:hover
+        {
+            box-shadow: 0 0 10px whitesmoke;  
+            border-radius: 100%;
+        }
+        header>h1,.content>h1{
+            font-family: cursive;
+            animation: animate 2s linear forwards;
+        }
+       
+            @keyframes animate
+        {
+            0%
+            {
+            
+                transform: rotateY(90deg);
+                filter: blur(10px);
+                font-size: 0px;
+            }
+            100%
+            {
+                filter: blur(0px);
+                font-size: 35px;
+            }
+        }
+        header{
+            /* background-color: yellowgreen; */
+            padding: 10px;
+            color: whitesmoke;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: relative;
+            
+        }
+        header>.one>a{
+            color: black;
+            text-decoration: none;
+            padding: 5px 15px;
+            text-align: center;
+            font-size: 20px;
+            transition: all 1s linear 0s;
+            
+        }
+        .pic
+        {
+            width: 41px;
+            height: 38px;
+            position: absolute;
+            left: 28.85%;
+            top: 5.75%;
+            filter: contrast(45);
+            border-radius: 50%;
+        }
+        @media (min-width:0px) and (max-width:800px)
+        {
+            header
+            {
+                flex-direction: column;
+            }
+            .pic
+            {
+                display: none;
+            }
+        }
+        @media (min-width:0px) and (max-width:500px) {
+            header>.one{
+                display: none;
+            }
+            .pic{
+                display: none;
+            }
+        }
+        .content
+        {
+           
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
+            text-align: center;
+        }
+        
+        .but
+        {
+            color: yellow;
+            background-color: black;
+            box-shadow: 0 0 7px black;
+        
+        }
+        .but:hover{
+            color: whitesmoke;
+            box-shadow: 0 0 7px red;
+        }
+      
+        
+        
+    </style>
+</head>
+<body>
+    <div class="container-fuid ">
+        <header>
+            <h1><span>V</span>olkswagon das auto</h1>
+            <div class="one">
+                <a href="#"><B>Home</B></a>
+                <a href="#"><B>Models</B></a>
+                <a href="#"><B>Offers</B></a>
+                <a href="#"><B>Emi Calculator</B></a>
+                <a href="#"><B>Contact Us</B></a>
+            </div>
+        </header>
+        <img src="img2.png" alt="loading" class="pic">
+        <div>
+            <div class=" content ">
+                <h1> Welcome to Volkswagen India </h1>
+                <p style="color: whitesmoke;">Take the next step with us,Volkswagen experience is waiting for you.</p>
+
+            </div>
+        </div>
+    </div>
+
+        <div class="container-fuid   mt-5  ">
+            <div class="row">
+                <div class="col-md-3 m-auto">
+                    <div class="card text-center" >
+                        <div class="card-header">
+                            <img src="gt.webp" alt="img loading" class="img-fluid">
+    
+                        </div>
+                        <div class="card-body">
+                            <h3><span style="color: crimson;">GT</span>Limited:-</h3>
+                            <p><b>Register</b> your Interest</p>
+                            <button class="btn btn-md but">Open up :) </button>
+                        </div>
+                    </div>
+                </div>
+<!-- ************************************************     second card         ******************************************************** -->
+                <div class="col-md-3 m-auto">
+                    <div class="card text-center">
+                        <div class="card-header">
+                            <img src="../day 1/h.jpg" alt="img loading" class="img-fluid">
+    
+                        </div>
+                        <div class="card-body">
+                            <h3><span style="color: crimson;">T</span>aigun:-</h3>
+                            <p><b>India's</b> Safest <b>SUVW</b></p>
+                            <button class="btn btn-md but">Open up :) </button>
+                        </div>
+                    </div>
+    
+    
+                </div>
+<!-- ************************************************     third card         ******************************************************** -->
+                <div class="col-md-3 m-auto">
+                    <div class="card text-center" >
+                       <div class="card-header">
+                        <img src="Virtus.webp" class="img-fluid" alt="cars"/>
+                       </div>
+                        <div class="card-body">
+                            <h3><b><span style="color: crimson;">V</span>irtus:-</b></h3>
+                            <p><b>German</b>-engineered for unmatched<b>Safety</b></p>
+                            <button class="btn btn-md but">Open up :) </button>
+                        </div>
+                    </div>
+                </div> 
+                
+            
+            </div>
+           
+
+           
+        </div>
+
+    
+</body>
+</html>

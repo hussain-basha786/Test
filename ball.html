@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Animations</title>
+    <style>
+        body{
+            background-color: black;
+
+        }
+        div{
+            box-shadow: 0 0 7px whitesmoke;
+            ;
+
+        }
+        .main
+        {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 97vh;
+        }
+        .next
+        {
+            height: 60px;
+            width: 60px;
+            border-radius: 50%;
+            background-color: white;
+            margin: 40px;
+            animation-fill-mode: forwards;
+            animation-timing-function: infinite;
+            animation: upp 1s linear 0s infinite  forwards;
+            animation: below 1s linear 0s infinite  forwards;
+            
+        }
+        #one
+        {
+            background-color: red;
+            animation-name: upp;
+            animation-delay: 0.5s;
+
+        }
+        
+        #two
+        {
+            background-color: orange;
+            animation-name: below;
+            animation-delay: 0.75s;
+        }
+        
+        #three
+        {
+            background-color: yellow;
+            animation-name: upp;
+            animation-delay: 1s;
+
+        }
+        
+        #four
+        {
+            background-color: green;
+            animation-name: below;
+            animation-delay: 0.5s;
+
+        }
+        #five
+        {
+            background-color: blue;
+            animation-name: upp;
+            animation-delay: 1.5s;
+        }
+        
+        #six
+        {
+            background-color: cyan;
+            animation-name: below;
+            animation-delay: 2s;
+        }
+        
+      
+        @keyframes  upp {
+            0%
+            {
+                transform: translateY(0px);
+            }
+            100%
+            {
+                transform: translateY(-150px);
+            }
+               
+        }
+        @keyframes  below {
+            0%
+            {
+                transform: translateY(-150px);
+            }
+            100%
+            {
+                transform: translateY(0px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="next" id="one"></div>
+        <div class="next" id="two"></div>
+        <div class="next" id="three"></div>
+        <div class="next" id="four"></div>
+        <div class="next" id="five"></div>
+        <div class="next" id="six"></div>
+    </div>
+    
+</body>
+</html>

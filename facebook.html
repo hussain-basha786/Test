@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> CSS Animation </title>
+  <style>
+    body
+    {
+      background-color: black;
+    }
+    div
+    {
+      height: 100%;
+      width: 100%;
+    }
+    div>span
+    {
+      background-color: black;
+      display: inline-block;
+      width: 30px;
+      height: 30px;
+      border-radius: 100%;
+      box-shadow: 0 0 15px red;
+
+      animation: huu 10s linear 0s infinite normal;
+      
+    }
+    div>span
+    {
+      background-color: red;
+      animation-delay: 0.3s;
+    }
+    @keyframes huu
+    {
+      0%
+      {
+        transform: translate(0px,0px);
+        background-color: blue;
+      }
+      10%
+      {
+        transform: translate(152px,300px);
+        background-color: orange;
+      }
+      20%
+      {
+        transform: translate(304px,0px);
+        background-color: yellow;
+      }
+      30%
+      {
+        transform: translate(456px,300px);
+        background-color: orchid;
+      }
+      40%
+      {
+        transform: translate(608px,0px);
+        background-color: palevioletred;
+      }
+      50%
+      {
+        transform: translate(760px,300px);
+        background-color: cyan;
+      }
+      60%
+      {
+        transform: translate(912px,0px);
+        background-color: yellowgreen;
+      }
+      70%
+      {
+        transform: translate(1064px,300px);
+        background-color: royalblue;
+      }
+      80%
+      {
+        transform: translate(1216px,0px);
+        background-color: darkviolet;
+      }
+      90%
+      {
+        transform: translate(1368px,300px);
+        background-color: crimson;
+      }
+      100%
+      {
+
+        transform: translate(1520px,0px);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <span></span>
+  </div>
+</body>
+</html>

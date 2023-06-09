@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="MDB/css/bootstrap.css">
+    <link rel="stylesheet" href="MDB/css/mdb.css">
+    <link rel="stylesheet" href="icons/fontawesome-free-6.4.0-web/css/all.css">
+    <title>Welcome Foodie</title>
+    <style>
+        body{
+            background: indianred url(burger-bg.jpg) no-repeat 0PX 0px scroll;
+            background-size: cover;
+
+          
+        }
+        .one
+        {
+            font-family: cursive;
+            font-size: 100px;
+
+        }
+        .two
+        {
+            font-family: cursive;
+            font-size: 50px;
+            color: black;
+        }
+        
+        span
+        {
+            color: crimson;
+            font-family: cursive;
+            font-size: 50px;
+        }
+        .landing
+        {
+            /* background: indianred url(burger-bg.jpg) no-repeat 100% 0px scroll;
+            background-size: cover; */
+            /* background-color: rgba(0, 0, 0, 0.2); */
+            text-align: center;
+            height: 100vh;
+        }
+        .landing>.wrapper
+        {
+            
+            height: inherit;
+        }
+        a:hover
+        {
+            box-shadow: 0 0 10px whitesmoke;
+        }
+        #width
+        {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .cate:hover
+        {
+            color: black;
+            box-shadow: 0 0 7px red;
+            font-weight: bold;
+            font-size: small;
+        }
+        
+        
+    </style>
+</head>     
+<body>
+
+    <script src="MDB/js/jquery.js"></script>
+    <script src="MDB/js/popper.js"></script>
+    <script src="MDB/js/bootstrap.js"></script>
+    <script src="MDB/js/mdb.js"></script>
+
+
+    <nav class="navbar navbar-light bg-dark navbar-dark navbar-expand-sm">
+        <div class="container-fluid">
+            <a href="#" class="navbar-brand fa-sharp fa-regular fa-circle-f fa-beat">  <span>FOODIE</span> House.inn</a>
+            <button class="navbar-toggler" data-target="#links" data-toggle="collapse">
+                <span class="navbar-toggler-icon">
+
+                </span>
+            </button>
+            <div class="collapse navbar-collapse " id="links">
+                <ul class="navbar-nav ml-auto ">
+                    <li class="nav-items ">
+                        <!-- Example single danger button -->
+                        <div >
+                            <!-- <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Menu
+                            </button> -->
+                            <a href="" class="nav-link  text-Warning font-weight-bold dropdown-toggle " data-toggle="dropdown">Menu</a>
+                            <div class="dropdown-menu bg-light " style="margin-left: 54%;">
+                            <a class="dropdown-item" href="#">Burger</a>
+                            <a class="dropdown-item" href="#">Pizza</a>
+                            <a class="dropdown-item" href="#">friench fries</a>
+                            <a class="dropdown-item" href="#">Birayani </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="" class="nav-link text-Warning font-weight-bold">King Deals</a>
+                    </li>
+                    <li>
+                        <a href="" class="nav-link text-Warning font-weight-bold">Offers</a>
+                    </li>
+                    <li>
+                        <a href="" class="nav-link text-Warning font-weight-bold">Contact us</a>
+                    </li>
+                </ul>
+
+            </div>
+            <button class="btn btn-sm btn-outline-white" data-target="#log" data-toggle="modal">LogIn</button>
+            <button class="btn btn-sm btn-outline-white" data-target="#reg" data-toggle="modal">Register</button>
+        </div>
+        </nav>
+        <div class="landing">
+            <div class="wrapper d-flex flex-column justify-content-center align-items-center ">
+                <h1 class="text-warning font-weight-bold one"> Welcome</h1>
+                    <br>
+                <p  class="two"> what are you craving for  </p>
+                <button class="btn btn-lg bg-warning text-dark " data-target="#open"  data-toggle="modal" style="border-radius: 15px;">open it:)</button>
+            </div>
+        </div>
+        <!-- ***************************      modal          *********************************************  * -->
+
+        <div class="modal " id="log">
+            <div class="modal-dialog ">
+                <div class="modal-content">
+                    <div class="modal-header bg-dark">
+                        <h1 class="text-white font-weight-bold">Login in Here</h1>
+                        <button class="close" data-dismiss="modal">
+                            <i class="fa-solid fa-xmark fa-bounce fa-sm"></i>
+                        </button>
+                    </div>
+                    <div class="modal-body bg-dark">
+                        <div class="form-group">
+                            <input type="text" placeholder="Enter UserName" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" placeholder="Enter password" class="form-control">
+                        </div>
+                    </div>
+                    <div class="modal-footer bg-info">
+                        <button class="btn btn-primary btn-md">Submit</button>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+        <div class="container-fluid d-flex flex-column justify-content-space-around align-items-center ">
+            <div class="row">
+                <div class="col-md-3 m-auto">
+                    <div class="card text-center" >
+                        <div class="card-header">
+                            <img src="burger.jpg" alt="img loading" class="img-fluid">
+    
+                        </div>
+                        <div class="card-body">
+                            <h3><span style="color: crimson;">Burger</span></h3>
+                            <p>Just One More Bite.
+                                Fight For the <b>Greatest Bite</b>.</p>
+                            <button class="btn btn-md btn-info cate">Open up :) </button>
+                        </div>
+                    </div>
+                </div>
+<!-- ************************************************     second card         ******************************************************** -->
+                <div class="col-md-3 m-auto">
+                    <div class="card text-center">
+                        <div class="card-header">
+                            <img src="fries.jpg" alt="img loading" class="img-fluid">
+    
+                        </div>
+                        <div class="card-body">
+                            <h3><span style="color: crimson;">French Fries</span></h3>
+                            <p>Keep your <b>Friends</b> close and your <b>French Fries</b> closer.</p>
+                            <button class="btn btn-md btn-info cate">Open up :) </button>
+                        </div>
+                    </div>
+    
+    
+                </div>
+<!-- ************************************************     third card         ******************************************************** -->
+                <div class="col-md-3 m-auto">
+                    <div class="card text-center" >
+                       <div class="card-header">
+                        <img src="pizza.jpg" class="img-fluid" alt="cars"/>
+                       </div>
+                        <div class="card-body">
+                            <h3><span style="color: crimson;">Pizza</span></h3>
+                            <p>The <b>Party</b> can't start without <b>Pizza</b></p>
+                            <button class="btn btn-md btn-info cate">Open up :) </button>
+                        </div>
+                    </div>
+                </div> 
+                
+            
+            </div>
+           
+
+           
+        </div>
+        <!-- **************************************Register ************************************************ -->
+        
+        <!-- Modal: modalCart -->
+         <div class="modal fade" id="reg" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                <!--Header-->
+                    <div class="modal-header bg-dark ">
+                        <h2 class="text-center text-white " style="font-family: cursive;">Register Here :</h2>
+                        
+                    </div>
+                <!--Body-->
+                <div class="modal-body bg-dark">
+                    <div class="container m-auto">
+                        <div class="row">
+                            <div class="col-md m-auto">
+                                <div class="card ">                                    
+                                    <div class="card-body bg-light">
+                                        <form>
+                                            <div class="form-group">
+                                                <input type="text" placeholder="Enter Username" class="form-control">
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="text" placeholder="Enter Email" class="form-control">
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="password" placeholder="Enter Password" class="form-control">
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="text" placeholder="Enter Confirm Password" class="form-control">
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="submit" class="btn btn-primary btn-md" value="Register">
+                                                <input type="reset" class="btn btn-primary btn-md " data-dismiss="modal" value="Cancel">
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+       </div> 
+   </div>
+   <!-- **********************************open it login modal *************************************************************** -->
+   <div class="modal fade" id="open" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content ">
+        <div class="modal-body bg-info">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close" animate>
+                <span class="fa-beat-fade " >&times;</span>
+              </button>
+            <h4 class="text-dark text-center font-family">Login IN / New user </h4>
+            <p>Register to avail best offers and  Enjoy best deals </p>
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+               
+                 
+</body>
+</html>
